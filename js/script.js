@@ -32,15 +32,7 @@ const upButton = document.getElementById('previousb')
 const downButton = document.getElementById('nextb')
 
 
-// for (let i = 0; i < images.length; i++) {
-//    carouselImageEl.innerHTML +=
-//       `
-//       <div class="my_carousel-item">
-//       <img src=${images[i].image} alt="${images[i].title}">
-//       <div>
-//       `
-// }
-upButton.addEventListener("click", function() {
+upButton.addEventListener("click", function () {
 });
 
 downButton.addEventListener("click", function () {
