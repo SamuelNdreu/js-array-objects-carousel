@@ -28,25 +28,22 @@ const images = [
 
 
 const carouselImageEl = document.querySelector(".carousel-image")
-const upButton = document.getElementById('previous')
-const downButton = document.getElementById('next')
+const upButton = document.getElementById('previousb')
+const downButton = document.getElementById('nextb')
 
 
-for (let i = 0; i < images.length; i++) {
-   carouselImageEl.innerHTML +=
-      `
-      <div class="my_carousel-item">
-         <img src=${images[i].image} alt="${images[i].title}">
-      <div>
-      `
-}
-upButton.addEventListener("click", function () {
-   console.log('ciccio')
-})
-
+// for (let i = 0; i < images.length; i++) {
+//    carouselImageEl.innerHTML +=
+//       `
+//       <div class="my_carousel-item">
+//       <img src=${images[i].image} alt="${images[i].title}">
+//       <div>
+//       `
+// }
+upButton.addEventListener("click", function() {
+});
 
 downButton.addEventListener("click", function () {
-   console.log('ciccio')
 })
 
 
