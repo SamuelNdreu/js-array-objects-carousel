@@ -33,6 +33,7 @@ const downButton = document.getElementById('nextb')
 
 
 upButton.addEventListener("click", function () {
+   alert("cliccato")
 });
 
 downButton.addEventListener("click", function () {
