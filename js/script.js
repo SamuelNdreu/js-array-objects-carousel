@@ -69,6 +69,7 @@ for (let index = 0; index < images.length; index++) {
    divMyCarousel.innerHTML = `<img src="./${images[index].image}" alt="image">`
    divMyCarousel.classList.add('my_carousel-item')
    divCarouselImage.appendChild(divMyCarousel);
+   imgPosition.push(divMyCarousel);
 }
 
 imgPosition[counter].classList.add('active');
