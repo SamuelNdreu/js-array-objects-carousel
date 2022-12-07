@@ -54,10 +54,14 @@ const images = [
 const divCarouselImage = document.querySelector('div.carousel-image');
 
 
+let counter = 0;
 let divMyCarousel;
 
-const buttonPrevious = document.getElementById('previous');
-const buttonNext = document.getElementById('next');
+let imgPosition = [];
+
+
+const buttonPrevious = document.querySelector('div.previous');
+const buttonNext = document.querySelector('div.next');
 
 
 for (let index = 0; index < images.length; index++) {
@@ -67,10 +71,31 @@ for (let index = 0; index < images.length; index++) {
    divCarouselImage.appendChild(divMyCarousel);
 }
 
+imgPosition[counter].classList.add('active');
+
 //Aggiungo un evento click al buttone in alto
 buttonPrevious.addEventListener('click', function() {
+   imgPosition[counter].classList.remove('active');
+   counter--;
+   if (counter < 0){
+      counter = imgPosition.length -1;
+   }
+   imgPosition[counter].classList.add('active');
+   
+
 });
+
+
 
 //Aggiungo un evento click al buttone in basso
 buttonNext.addEventListener('click', function(){
+   imgPosition[counter].classList.remove('active');
+   counter++;
+   if (counter > imgPosition.length -1){
+      counter = 0;
+   }
+   imgPosition[counter].classList.add('active');
+
+
 });
+
